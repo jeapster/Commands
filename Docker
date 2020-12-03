@@ -1,3 +1,5 @@
 docker ps
 docker network ls
 docker network inspect bridge
+
+docker exec -it my-dse bash
