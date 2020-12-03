@@ -2,5 +2,6 @@ docker ps
 docker network ls
 docker network inspect bridge
 
+docker run -e DS_LICENSE=accept --name my-dse -d datastax/dse-server:6.8.7 -s -k -g
 docker exec -it my-dse bash
 docker restart container my-dse
